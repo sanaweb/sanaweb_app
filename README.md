@@ -35,29 +35,18 @@ Django Setup:
 ------------
 
 Create Sana project
-django-admin.py startproject sana
+> django-admin.py startproject sana
 
 Sync database
-python manage.py syncdb
+> python manage.py syncdb
 
 Create Sana web app (inside project directory)
-python manage.py startapp <app_name>
+> python manage.py startapp <app_name>
 
 
 Database setup:
 --------------
 
 Edit settings.py
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sana',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '8889',
-    }
-}
+See https://docs.djangoproject.com/en/1.6/ref/settings/#databases for database specific details
 
